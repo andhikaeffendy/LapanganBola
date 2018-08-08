@@ -23,6 +23,7 @@ public class RiwayatAdapter extends ArrayAdapter<Riwayat> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         if (convertView == null)
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.fragment_riwayat_pertandingan,parent,false);
+
         Riwayat current = getItem(position);
         TextView hariRiwayat = (TextView) convertView.findViewById(R.id.hari_riwayat);
         TextView jamRiwayat = (TextView) convertView.findViewById(R.id.jam_riwayat);

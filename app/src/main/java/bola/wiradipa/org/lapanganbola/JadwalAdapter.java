@@ -23,6 +23,7 @@ public class JadwalAdapter extends ArrayAdapter<Jadwal> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         if (convertView == null)
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.fragment_jadwal,parent,false);
+
         Jadwal current = getItem(position);
         TextView textJadwal = (TextView) convertView.findViewById(R.id.hari_jadwal);
         TextView textJam = (TextView) convertView.findViewById(R.id.jam_jadwal);

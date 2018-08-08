@@ -22,6 +22,7 @@ public class LapanganAdapter extends ArrayAdapter<Lapangan> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         if (convertView == null)
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_lapangan,parent,false);
+
         Lapangan current = getItem(position);
         TextView nama_lapangan = (TextView) convertView.findViewById(R.id.nama_lapangan);
         TextView lokasi_lapangan = (TextView) convertView.findViewById(R.id.lokasi_lapangan);
